@@ -1,38 +1,208 @@
-.App {
-  text-align: center;
+.container-app{
+    background-color: purple;
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-alfred{
+    background-color: black;
+    width: 80%;
+    height: 80%;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid black;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+iframe{
+    width: 100%;
+    height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.visita-virtual{
+    width: 100%;
+    height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-slider-custom{
+    width: 100%;
+    height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+#kiko-slider{
+    font-family: sans-serif;
+    margin: auto;
+    background-color: white;
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+   }
+   
+   #kiko-slider > ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+   }
+   
+   #kiko-slider > ul.slider{
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 300px;
+   }
+   
+   #kiko-slider > ul.slider h1{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+   }
+   
+   #kiko-slider > ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+   }
+   
+   #kiko-slider > ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+   }
+   
+   #kiko-slider > ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+   }
+   
+   #kiko-slider > ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+   }
+   
+   #kiko-slider > .menu{
+    text-align: center;
+    margin: 20px;
+   }
+   
+   #kiko-slider > .menu li{
+    display: inline-block;
+    text-align: center;
+   }
+   
+   #kiko-slider > .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+   }
+   
+   
+   
+   .slide-contenedor{
+       max-width:100%;
+       max-height: 100vh;
+       width: 100%;
+       height:100vh;
+       position: relative;
+       overflow: hidden;
+       /* margin: auto; */
+   }
+   
+   .miSlider.fade{
+       height: 100vh;
+   }
+   
+   /* .miSlider{
+       display: none;
+       transition: 2s;
+       max-height: 100vh;
+   } */
+   
+   .miSlider img{
+       width: 100%;
+       max-height: 100vh;
+       height: inherit;
+       object-fit: fill;
+       vertical-align: top;
+       transition: 2s;
+   }
+   
+   .direcciones{
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       top: 0;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       font-size: 20px;
+   }
+   
+   .direcciones a{
+       color: #fff;
+       display: inline-block;
+       padding: 20px;
+       text-decoration: none;
+   }
+   
+   .direcciones a:hover{
+       background: rgba(0, 0, 0, .5);
+       transition: .5s;
+   }
+   
+   .barras{
+       position: absolute;
+       bottom: 0;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       margin-bottom:15px;
+   }
+   
+   .barra{
+       cursor: pointer;
+       height:2px;
+       width: 25px;
+       margin: 0 2px;
+       background: #dcdde1;
+       display: inline-block;
+       margin-left: 3px;
+   }
+   .carousel-item{
+       height: 100vh;
+   }
+   
+   
+   .slider-images{
+       height: 100vh;
+       width: 100%;
+   }
+   
+   .fade{
+       animation-name: fade;
+       animation-duration: 1.5s;    
+   }
+   
+   @keyframes fade {
+       from {opacity: .4;}
+       to{opacity:1;}
+   }
