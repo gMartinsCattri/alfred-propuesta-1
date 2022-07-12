@@ -1,4 +1,13 @@
 import logo from './logo.svg';
+import uberApp from './uber-app-removebg-preview.png'
+import cinepolisApp from './cinepolislogo-removebg-preview.png'
+import chedrauiApp from './chedraui-logo-removebg-preview.png'
+import cocaCola from './coca-cola-campaing.jpeg'
+import estacionamientoApp from './estacionamiento.png'
+import appleApp from './apple-logo-removebg-preview.png'
+import americanEagleApp from './american-eagle-logo-removebg-preview.png'
+import disney from './Pottery-Barn-Kids-Successful-Banner-Ad.webp'
+import zara from './zara-campaing.jpeg'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -12,7 +21,7 @@ function App() {
     
     setInterval(function tiempo(){
         muestraSlides(indice+=1)
-    },4000);
+    },2000);
     function muestraSlides(n){
         let i;
         const slides = document.getElementsByClassName('miSlider');
@@ -48,12 +57,12 @@ function App() {
       <header className="App-header">
         
         <div className="container-app">
-        <div className="app-alfred"><img src={logo} alt="uber"></img></div>
-        <div className="app-alfred"><img src={logo} alt="uber"></img></div>
-        <div className="app-alfred"><img src={logo} alt="uber"></img></div>
-        <div className="app-alfred"><img src={logo} alt="uber"></img></div>
-        <div className="app-alfred"><img src={logo} alt="uber"></img></div>
-        <div className="app-alfred"><img src={logo} alt="uber"></img></div>
+        <div className="app-alfred"><img className="image-app-alfred" src={uberApp} alt="uber"></img></div>
+        <div className="app-alfred"><img className="image-app-alfred" src={cinepolisApp} alt="uber"></img></div>
+        <div className="app-alfred"><img className="image-app-alfred" src={chedrauiApp} alt="uber"></img></div>
+        <div className="app-alfred"><img className="image-app-alfred" src={estacionamientoApp} alt="uber"></img></div>
+        <div className="app-alfred"><img className="image-app-alfred" src={appleApp} alt="uber"></img></div>
+        <div className="app-alfred"><img className="image-app-alfred" src={americanEagleApp} alt="uber"></img></div>
         </div>
 
         <div className="slider-alfred">
@@ -73,13 +82,13 @@ function App() {
              
              <div className="slide-contenedor">
                 <div className="miSlider fade">
-                    <img src={logo} alt=""></img>
+                    <img src={disney} alt=""></img>
                 </div>
                 <div className="miSlider fade">
-                    <img src={logo} alt=""></img>
+                    <img src={cocaCola} alt=""></img>
                 </div>
                 <div className="miSlider fade">
-                    <img src={logo} alt=""></img>
+                    <img src={zara} alt=""></img>
                 </div>
                
                 <div className="barras">
