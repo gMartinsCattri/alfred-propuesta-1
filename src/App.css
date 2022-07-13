@@ -21,6 +21,32 @@
 
 }
 
+.offcanvas-body
+.container-app-off-canvas-body{
+    height: 5vh !important;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.canvas-app-alfred{
+    width: 15% !important;
+    height: 80%;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.canvas-imagem-app-alfred{
+    width: 137px !important; 
+}
+
 .image-app-alfred{
     width: 272px;
 }
@@ -31,11 +57,38 @@
     height: 250px !important;
 }
 
+.container-aplazo{
+    background-color: rgba(78, 84, 114, 1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.aplazo-alfred{
+    height: 100px;
+    width: 30%;
+    background-color: #292b3a !important;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius:20px !important;
+}
+.dropdown-menu-aplazos{
+    height:11vh !important;
+}
+.aplazo-logo{
+    width: 300px;
+}
+
+.offcanvas-body{
+    background-color: rgba(78, 84, 114, 1);
+}
 
 .carousel-control-prev-icon{
-    background-image: url("/restaurant-icon.png") !important;
+    background-image: url("/mesa-redonda.png") !important;
     width: 250px !important;
     height: 250px !important;
+    background-color: red !important;
+    background-size: 180px !important;
+    border-radius: 100px;
 }
 .carousel-control-next{
     display: flex;
@@ -224,7 +277,7 @@ iframe{
    
    .fade{
        animation-name: fade;
-       animation-duration: 1.5s;    
+       animation-duration: 5.5s;    
    }
    
    @keyframes fade {
